@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1>Свяжитесь с нами</h1>
+        <p class="lead">У вас есть вопросы или пожелания? Мы будем рады услышать ваше мнение!</p>
+
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Ваше имя</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Почта email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Предмет</label>
+                <input type="text" class="form-control" id="subject" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Контактная информация</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="bi bi-envelope me-2"></i> contact@diaryapp.com
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-telephone me-2"></i> +7 922 177 0690
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-geo-alt me-2"></i> Екатеринбург, Фурманова 57
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-clock me-2"></i> С пон.- пятн.: с 10:00 до 19:00
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Подписывайтесь</h5>
+                <div class="d-flex justify-content-around">
+                    <a href="#" class="text-dark"><i class="bi bi-telegram fs-3"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-whatsapp fs-3"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-facebook fs-3"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-twitter fs-3"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-instagram fs-3"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-linkedin fs-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
